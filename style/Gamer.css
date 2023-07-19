@@ -186,9 +186,48 @@ main div{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
 /*Play games section ends*/
+/*button section starts*/
+.button-section{
+    background-color: rgba(255, 66, 165, 0.03);
+
+}
+.button{  
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 200px 40px 200px;
+}
+.button button{
+    display:flex;
+    align-items: center;
+    gap: 15px;
+    padding: 5px 10px;
+}
+.button2{  
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    gap: 30px;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 80px;
+}
+
+.button2 button{
+    display:flex;
+    align-items: center;
+    gap: 15px;
+    padding: 5px 10px;
+}
+.button-section button:hover{
+    border: 2px solid #FF42A5;
+}
+.button-section button:hover p{
+    color: #FF42A5;
+}
+/*button section ends*/
     
 
 /*main section ends*/
@@ -302,6 +341,13 @@ main div{
     .playp{
         width: 100%;
         text-align: center;
+    }
+    .button{
+        grid-template-columns: repeat(3,1fr);
+
+    }
+    .button2{
+    grid-template-columns: repeat(3,1fr);
     }
 }
 /*mobile device style ends*/
