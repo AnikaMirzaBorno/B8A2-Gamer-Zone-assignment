@@ -1,6 +1,17 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
 *{
     font-family: Work Sans;
     margin: 0px;
+}
+button{
+    padding: 15px 35px;
+    border-radius: 48px;
+    font-size: 15px;
+    color: #FFF;
+    border: none;
 }
 /*header section starts*/
 .header{
@@ -19,7 +30,7 @@
 .navicon a{
     padding-left: 5px;
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 700;
     color: black;
 }
@@ -57,7 +68,142 @@ main div{
 
 }
 /*header section ends*/
+
+/*main section starts*/
+/*banner section starts*/
+.banner{
+    display: flex;
+    gap: 15px; 
+    height: 500px;
+    padding-right: 100px; 
+}
+.banner>div{
+    flex: 1;
+}
+.bannerpara{
+    background-image: url('../images/Group\ 14.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 110px 200px;
+    
+}
+.bannerhd{
+    color: #0B0223;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.bannerhd2{
+    font-size: 50px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+.bannerpara div{
+    display: flex;
+    margin-bottom: 7px;
+}
+.bannerpara div p{
+    padding-left: 10px;
+}
+.bannerbutton{
+    margin-top: 35px;
+    gap: 20px;
+}
+.sign{
+    background-color: #FF42A5;
+}
+.rogue{
+    background-color: #4EC5F7;
+}
+/*banner section ends*/
+/*online games section starts*/
+.online-game{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.online-game h1{
+    font-size: 35px;
+    margin-bottom: 13px;
+}
+.game-img{
+    padding: 30px 200px ;
+    display: flex;
+    justify-content: space-between;
+}
+.game-img img{
+    width: 270px;
+    height: 330px;
+}
+.game-img figcaption{
+    padding-top: 10px;
+    text-align: left;
+}
+/*online games section ends*/
+/*Play games section starts*/
+.playgame{
+    display: flex;
+    padding-right: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.playimg{
+    Display: grid;
+    Grid-template-columns: repeat(12, 1fr);
+    Position: relative;
+}
+.playimg1{
+    grid-column: 4;
+    grid-row: 1; 
+}  
+.playimg2 {
+    grid-column: 1/span 8;
+    grid-row: 1;
+    padding-top: 25%;
+    padding-left: 60%;
+    z-index: 1; 
+}
+.playp{
+    width: 2200px;
+}
+.playgame h1{
+    font-size: 35px;
+    
+}
+.playgame p{
+    margin-top: 10px;
+    color:#534C64;
+}
+.playhd1{
+    color: #FF42A5;
+}
+.playhd2 span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/*Play games section ends*/
+    
+
+/*main section ends*/
+
+
+
+
+
+
+
+
+
+
 /*tablet style starts*/
+
 @media screen and (min-width:576px) and (max-width:992px){
     .navicon{
         padding-left: 10px;
@@ -65,14 +211,46 @@ main div{
     .navmain{
         padding-right: 10px;
     }
+    .banner{
+        height: 300px;
+    }
+    .bannerpara{
+        padding: 20px 10px 20px 40px;
+
+    }
+    .bannerimg img{
+        height: 300px;
+    }
+    .game-img{
+        padding: 30px ;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .playimg2 {
+        padding-top: 40%;
+        padding-left: 27%;
+    
+      }
+    .playgame{
+        flex-direction: column;
+        padding-right: 0px;
+    }
+    .playimg{
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    .playp{
+        width: 100%;
+        text-align: center;
+    }
+
     
 }
 /*tablet style ends*/
 
 
 /*mobile device style starts*/
-
-/*header section starts*/
 @media screen and (max-width:576px) {
     .header{
         background: none;
@@ -91,12 +269,40 @@ main div{
         
         flex-direction: column;
     }
+    .banner{
+        flex-direction: column-reverse;
+        height:auto;
+        padding: 0;
+    }
+    .bannerpara{
+        padding: 20px 10px 20px 40px;
+
+    }
+    .game-img{
+        padding: 30px ;
+        flex-direction: column;
+    }
+    .game-img figcaption{
+        text-align:center;
+    }
     
+    .playimg2 {
+        padding-top: 40%;
+        padding-left: 27%;
     
+      }
+      .playgame{
+        flex-direction: column;
+        padding-right: 0px;
+    }
+    .playimg{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .playp{
+        width: 100%;
+        text-align: center;
+    }
 }
-
-
-/*header section ends*/
-
 /*mobile device style ends*/
 
