@@ -193,11 +193,11 @@ main div{
 
 }
 .button{  
-    display:grid;
-    grid-template-columns: repeat(5,1fr);
+    display:flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding: 80px 200px 40px 200px;
+    padding: 80px 200px 80px 200px;
 }
 .button button{
     display:flex;
@@ -205,22 +205,7 @@ main div{
     gap: 15px;
     padding: 5px 10px;
 }
-.button2{  
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    justify-content: center;
-    gap: 30px;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-bottom: 80px;
-}
 
-.button2 button{
-    display:flex;
-    align-items: center;
-    gap: 15px;
-    padding: 5px 10px;
-}
 .button-section button:hover{
     border: 2px solid #FF42A5;
 }
@@ -231,6 +216,75 @@ main div{
     
 
 /*main section ends*/
+/*footer section starts*/
+.footer{
+    background: #0B0223;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+.icon{
+    text-align: center;
+}
+.icon a{
+    text-decoration: none;
+    padding-left: 5px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color:white;
+}
+.icon a span{
+    color: #FF42A5;
+}
+.icon img{
+    height: 30px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;    
+}
+.about a{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-decoration: none;
+    color: #FFF;
+}
+.footbutton{
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 110px;
+    padding-right: 110px;
+
+}
+.footbutton button{
+    padding: 0px;
+    font-size: 30px;
+    background: none;
+
+}
+.terms{
+    display: flex;
+    justify-content: center;  
+    gap: 30px;  
+}
+.terms a{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.60);
+}
+.footer p{
+    font-size: 12px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.60);
+
+}
+
+/*footer section ends*/
 
 
 
@@ -283,7 +337,18 @@ main div{
         width: 100%;
         text-align: center;
     }
+    .button{
+        padding-left: 0px;
+        padding-right: 0px;
+        gap: 10px;
 
+    }
+    .footer{
+        
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
     
 }
 /*tablet style ends*/
@@ -343,12 +408,53 @@ main div{
         text-align: center;
     }
     .button{
-        grid-template-columns: repeat(3,1fr);
+        padding-left: 0px;
+        padding-right: 0px;
+        gap: 7px;
 
     }
-    .button2{
-    grid-template-columns: repeat(3,1fr);
+    .footer{
+        
+        padding-left: 80px;
+        padding-right: 80px;
     }
+
+    .about{
+        flex-wrap: wrap;
+        padding-top: 50px; 
+        padding-bottom: 50px;
+        gap: 6px;   
+    }
+    .about a{
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+    .footbutton{
+        flex-wrap: wrap;
+        gap:30px; 
+        padding-left: 50px;
+        padding-right: 50px;
+    
+    }
+    .terms{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;  
+        gap: 10px;
+        padding-top: 50px;  
+        padding-bottom: 50px;
+    }
+    .terms a{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .footer p{
+        font-size: 12px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.60);
+    
+    }
+    
 }
 /*mobile device style ends*/
 
